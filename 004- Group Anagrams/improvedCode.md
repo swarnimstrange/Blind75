@@ -34,13 +34,13 @@ This line creates a new integer array of size 26 (for 26 letters: 'a' to 'z'), a
 Is equivalent to -: int[] count = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 Then this line:
-<b> count[c - 'a']++; <b>
+<b> count[c - 'a']++; </b>
 Starts modifying the appropriate index
 
 For string "eat": [1,0,0,0,1,...,1,...]
 
 Then this line:
-<b> sb.append((char) ('a' + i)).append(count[i]); <b>
+<b> sb.append((char) ('a' + i)).append(count[i]); </b>
 Converts index back to a character and append the cound of frequency
 
 So we get a string like this, which can be compared -: "a1e1t1"
