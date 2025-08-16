@@ -49,7 +49,7 @@ Space Complexity: O(k) for result set (where k is the number of unique triplets)
 
 <h3> Code in Java </h3>
 
-<pre>``` class Solution {
+<code> class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         HashSet<List<Integer>> numSet = new HashSet<>();
@@ -73,4 +73,5 @@ Space Complexity: O(k) for result set (where k is the number of unique triplets)
         }
         return new ArrayList<>(numSet);
     }
-} ``` </pre>
+} 
+</code>
