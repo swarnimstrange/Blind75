@@ -49,28 +49,4 @@ Space Complexity: O(k) for result set (where k is the number of unique triplets)
 
 <h3> Code in Java </h3>
 
-class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        HashSet<List<Integer>> numSet = new HashSet<>();
-        for(int i = 0;i<nums.length-2;i++){
-            int target = 0 - nums[i];
-            int left=i + 1;
-            int right=nums.length-1;
-            while(left<right){
-                if(nums[left]+nums[right]==target){
-                    numSet.add(Arrays.asList(nums[i], nums[left], nums[right]));
-                    right--;
-                    left++;
-                }
-                else if(nums[left]+nums[right]>target){
-                    right--;
-                }
-                else{
-                    left++;
-                }
-            }
-        }
-        return new ArrayList<>(numSet);
-    }
-}
+<pre> ```java class Solution { public List<List<Integer>> threeSum(int[] nums) { Arrays.sort(nums); HashSet<List<Integer>> numSet = new HashSet<>(); for (int i = 0; i < nums.length - 2; i++) { int target = 0 - nums[i]; int left = i + 1; int right = nums.length - 1; while (left < right) { if (nums[left] + nums[right] == target) { numSet.add(Arrays.asList(nums[i], nums[left], nums[right])); right--; left++; } else if (nums[left] + nums[right] > target) { right--; } else { left++; } } } return new ArrayList<>(numSet); } } ``` </pre>
