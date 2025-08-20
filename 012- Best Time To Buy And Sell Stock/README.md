@@ -53,13 +53,13 @@ class Solution {
         int maxProfit = 0;
         int buyingIndex = 0;
         int sellingIndex = 1;
-        while(sellingIndex<prices.length){
-            while(prices[sellingIndex]>=prices[buyingIndex]){
+        while( sellingIndex < prices.length ){
+            while(prices[sellingIndex] >= prices[buyingIndex]){
                 int profit = prices[sellingIndex]-prices[buyingIndex];
-                if(profit>maxProfit){
+                if(profit > maxProfit){
                     maxProfit = profit;
                 }
-                if(sellingIndex==prices.length-1){
+                if(sellingIndex == prices.length-1){
                     break;
                 }
                 sellingIndex++;
