@@ -19,7 +19,6 @@ Step 4: Update prev as curr and curr as next (prev = curr, curr = next)
 Time Complexity = O(n)
 Space Complexity = O(1)
 **
-
 </pre>
 
 <h3> Code in Java </h3>
