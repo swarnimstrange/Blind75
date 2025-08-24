@@ -68,7 +68,7 @@ class Solution {
         ListNode curr = head;
         ListNode prev = null;
         ListNode next = null;
-        while(curr.next !=null && count<needN){
+        while( curr.next !=null && count < needN ){
             prev = curr;
             curr = curr.next;
             count++;
