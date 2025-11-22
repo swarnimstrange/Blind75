@@ -57,12 +57,12 @@ class Solution {
         int maxLength = 0;
         int left = 0;
         int[] intArray = new int[26];
-        for(int right=0;right<s.length();right++){
+        for(int right=0 ; right < s.length() ; right++){
             int index = s.charAt(right) - 'A';
             intArray[index]++;
             maxFreq = Math.max(maxFreq, intArray[index]);
 
-            while((right-left+1)-maxFreq >k){
+            while((right-left+1) - maxFreq > k){
                 int indx = s.charAt(left) - 'A';
                 intArray[indx]--;
                 left++;
